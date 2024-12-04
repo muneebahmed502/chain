@@ -1,0 +1,125 @@
+/* Container to hold card and stepper side-by-side */
+/* .card-container {
+    display: flex;
+    align-items: center;
+} */
+
+/* Card Styling */
+.card {
+    width: 70%; /* Make the card fill the container */
+    /* padding: 30px; */
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+    text-align: center;
+}
+
+/* Discount Tag */
+.discount {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #f0c14b;
+    color: black;
+    padding: 6px 8px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+/* Product Image */
+.product-image {
+    width: 200px;
+    height: 250px;
+    margin: 20px 0;
+}
+
+/* Product Title */
+.product-title {
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+/* Weight Selector */
+.product-weight {
+    color: gray;
+    margin: 5px 0;
+}
+
+/* Price Section */
+.price-section {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.new-price {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.old-price {
+    font-size: 16px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 20px;
+    width: 70%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+/* Stepper Container */
+.stepper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-left: 24px;
+    color: white;
+    font-size: 18px;
+}
+
+/* Top and Bottom Arrow */
+.stepper .arrow {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Steps */
+.step {
+    font-size: 16px;
+    color: white;
+    margin: 10px 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Vertical Line */
+.stepper::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    width: 2px;
+    background-color: white;
+    z-index: 0;
+}
+
+
+@media only screen and (max-width: 320px) {
+    .add-to-cart {
+     width: 90% !important;
+    }
+  }

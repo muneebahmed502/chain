@@ -1,0 +1,22 @@
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Adjust for vertical position */
+   right: 20px;   /* Adjust for horizontal position */
+    z-index: 1000; /* Make sure it's on top of other elements */
+  }
+  
+  .whatsapp-icon {
+    font-size: 40px;  /* Size of the WhatsApp icon */
+    color: #25D366;   /* WhatsApp green color */
+    text-decoration: none;
+    border-radius: 45%;
+    padding: 10px;
+    background-color: #ffffff; /* White background for icon */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  }
+  
+  .whatsapp-icon:hover {
+    background-color: #128C7E; /* Darker background on hover */
+    color: white;
+  }
+  
